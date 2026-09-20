@@ -1,0 +1,50 @@
+2026-03-20T10:00:00Z INFO web-service trace001 Request received POST /api/checkout
+2026-03-20T10:00:01Z INFO chat-service trace001 LLM API request started model=gpt-4.1-mini
+2026-03-20T10:00:01Z INFO chat-service trace001 LLM API response completed status=200 latency_ms=842
+2026-03-20T10:00:01Z INFO db-service trace001 PostgreSQL query started sql="SELECT id, plan, amount FROM subscriptions WHERE user_id = 101"
+2026-03-20T10:00:01Z INFO db-service trace001 PostgreSQL query completed rows=1 latency_ms=12
+2026-03-20T10:00:02Z WARN payment-service trace001 Payment API timeout retry1
+2026-03-20T10:00:03Z INFO payment-service trace001 Retry success
+2026-03-20T10:00:03Z INFO web-service trace001 Request completed status=200 latency_ms=3120
+2026-03-20T10:05:00Z INFO web-service trace002 Request received POST /api/checkout
+2026-03-20T10:05:00Z INFO chat-service trace002 LLM API request started model=gpt-4.1-mini
+2026-03-20T10:05:01Z INFO chat-service trace002 LLM API response completed status=200 latency_ms=801
+2026-03-20T10:05:01Z INFO db-service trace002 PostgreSQL query started sql="SELECT id, plan, amount FROM subscriptions WHERE user_id = 102"
+2026-03-20T10:05:01Z INFO db-service trace002 PostgreSQL query completed rows=1 latency_ms=15
+2026-03-20T10:05:01Z WARN payment-service trace002 Payment API timeout retry1
+2026-03-20T10:05:02Z WARN payment-service trace002 Payment API timeout retry2
+2026-03-20T10:05:03Z INFO payment-service trace002 Retry success
+2026-03-20T10:05:03Z INFO web-service trace002 Request completed status=200 latency_ms=4184
+2026-03-20T10:10:00Z INFO web-service trace003 Request received POST /api/checkout
+2026-03-20T10:10:00Z INFO chat-service trace003 LLM API request started model=gpt-4.1-mini
+2026-03-20T10:10:01Z INFO chat-service trace003 LLM API response completed status=200 latency_ms=915
+2026-03-20T10:10:01Z INFO db-service trace003 PostgreSQL query started sql="SELECT id, plan, amount FROM subscriptions WHERE user_id = 103"
+2026-03-20T10:10:01Z INFO db-service trace003 PostgreSQL query completed rows=1 latency_ms=11
+2026-03-20T10:10:01Z WARN payment-service trace003 Payment API timeout retry1
+2026-03-20T10:10:02Z WARN payment-service trace003 Payment API timeout retry2
+2026-03-20T10:10:03Z ERROR payment-service trace003 Payment API timeout
+2026-03-20T10:10:03Z ERROR web-service trace003 Request failed status=502 latency_ms=3988
+2026-03-20T10:15:00Z INFO web-service trace004 Request received POST /api/checkout
+2026-03-20T10:15:00Z INFO chat-service trace004 LLM API request started model=gpt-4.1-mini
+2026-03-20T10:15:01Z INFO chat-service trace004 LLM API response completed status=200 latency_ms=877
+2026-03-20T10:15:01Z INFO db-service trace004 PostgreSQL query started sql="SELECT id, plan, amount FROM subscriptions WHERE user_id = 104"
+2026-03-20T10:15:01Z INFO db-service trace004 PostgreSQL query completed rows=1 latency_ms=14
+2026-03-20T10:15:01Z WARN payment-service trace004 Payment API timeout retry1
+2026-03-20T10:15:02Z WARN payment-service trace004 Payment API timeout retry2
+2026-03-20T10:15:03Z ERROR payment-service trace004 ECONNRESET
+2026-03-20T10:15:03Z ERROR web-service trace004 Request failed status=502 latency_ms=4021
+2026-03-20T10:20:00Z INFO web-service trace005 Request received POST /api/checkout
+2026-03-20T10:20:00Z INFO chat-service trace005 LLM API request started model=gpt-4.1-mini
+2026-03-20T10:20:01Z INFO chat-service trace005 LLM API response completed status=200 latency_ms=826
+2026-03-20T10:20:01Z INFO db-service trace005 PostgreSQL query started sql="SELECT id, plan, amount FROM subscriptions WHERE user_id = 105"
+2026-03-20T10:20:01Z INFO db-service trace005 PostgreSQL query completed rows=1 latency_ms=13
+2026-03-20T10:20:01Z WARN payment-service trace005 Payment API timeout retry1
+2026-03-20T10:20:02Z ERROR payment-service trace005 Payment API unreachable
+2026-03-20T10:20:02Z ERROR web-service trace005 Request failed status=502 latency_ms=2870
+2026-03-20T10:25:00Z INFO web-service trace006 Request received POST /api/checkout
+2026-03-20T10:25:00Z INFO chat-service trace006 LLM API request started model=gpt-4.1-mini
+2026-03-20T10:25:01Z INFO chat-service trace006 LLM API response completed status=200 latency_ms=791
+2026-03-20T10:25:01Z INFO db-service trace006 PostgreSQL query started sql="SELECT id, plan, amount FROM subscriptions WHERE user_id = 106"
+2026-03-20T10:25:01Z INFO db-service trace006 PostgreSQL query completed rows=1 latency_ms=12
+2026-03-20T10:25:01Z ERROR payment-service trace006 Payment API unreachable
+2026-03-20T10:25:01Z ERROR web-service trace006 Request failed status=502 latency_ms=1918
