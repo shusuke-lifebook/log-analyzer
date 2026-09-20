@@ -18,7 +18,12 @@ description: 指定されたAPログおよびLBログを分析し、エラー傾
 1. 指定されたログを分析
   - [分析手順](./references/analysis-guide.md) を参照
 2. 原因を仮説立て
+  - [よくあるエラー](./references/error-patterns.md) を参照
+  - [システム構成](./references/architecture.md) を参照
 3. 対策を検討
+    対策は以下の2段階で考える。
+    - 暫定対策: すぐに実施可能な対策
+    - 恒久対策: 根本的な解決を目指す対策
 4. レポート作成
 
 ## Output
